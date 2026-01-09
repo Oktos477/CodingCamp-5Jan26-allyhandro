@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-DO LIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+
+    <section class="input-section">
+      <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Enter to-do..." required>
+        <input type="date" id="dateInput" required>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <table>
+        <thead>
+          <tr>
+            <th class="sortable" data-key="index">No</th>
+            <th class="sortable" data-key="task">Task</th>
+            <th class="sortable" data-key="date">Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="todoList">
+          <!-- To-do items -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 32px;
+  width: 700px;
+  max-width: 92%;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input, button {
+  padding: 10px 12px;
+}
+
+input {
+  flex: 1;
+}
+
+button {
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #364fc7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  border-bottom: 1px solid #eee;
+  padding: 12px 14px;
+}
+
+th {
+  background: linear-gradient(90deg, #f8f9fb, #eef2ff);
+  color: #223;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.sortable.asc::after {
+  content: " ▲";
+  font-size: 10px;
+}
+.sortable.desc::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: #fbfbfd;
+}
+
+tbody tr:hover {
+  background: #f1f5ff;
+}
+
+.delete-btn {
+  background: #e03131;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c92a2a;
+}
